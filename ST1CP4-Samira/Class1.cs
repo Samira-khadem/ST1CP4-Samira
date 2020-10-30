@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices.ComTypes;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ST1CP4_Samira
@@ -10,11 +11,14 @@ namespace ST1CP4_Samira
     {
         public void first()
         {
+      
             Console.WriteLine("Enter your Name:");
             string myName = Console.ReadLine();
             Console.WriteLine("would you like to order food?");
             string anOrder = Console.ReadLine();
-            if (anOrder == "yes") {  
+            
+
+             if (anOrder == "yes") {  
                 orderhere(); }
             
             else if (anOrder == "no")
@@ -30,9 +34,12 @@ namespace ST1CP4_Samira
         }
 
         public void orderhere()
+
         {
-            Console.WriteLine("Which one of our delicious pizzas you want to try? *-pizza romana *-pizza diavolo *-pizza tonno *-pizza formaggi *-pizzamargarita");
+            
+            Console.WriteLine("Which one of our delicious pizzas you want to try? *-pizza romana *-pizza diavolo *-pizza tonno *-pizza formaggi *-pizza margarita");
             string pizza = Console.ReadLine();
+            
             Console.WriteLine("which size: *-small *-big *-super");
             string size = Console.ReadLine();
             Console.WriteLine("would you like to add some drinks to your order");
@@ -60,7 +67,7 @@ namespace ST1CP4_Samira
         {
             Console.WriteLine("what kind of drink would you like? *-beer *-cola *-juice?");
             string mydrink = Console.ReadLine();
-            Console.WriteLine("ok then, what time do you wnat your food at your door?");
+            Console.WriteLine("ok then, what time do you want your food at your door?");
             string ordTim = Console.ReadLine();
             Console.WriteLine("which payment method do you prefer? *-cash *-paypal *-credit card *-bitcoin");
             string payme = Console.ReadLine();
