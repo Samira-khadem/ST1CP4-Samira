@@ -60,7 +60,8 @@ namespace ST1CP4_Samira
             double house = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("please enter your phone number:");
             double phone = Convert.ToDouble(Console.ReadLine());
-           //Console.WriteLine("Thank you for ordering. here is details to your order: a "  + pizza + "size" + size + "would be delivered at: " +ordTim + "at " + city  + " " + street + " " + house);
+            Console.WriteLine("thank you");
+           //Console.WriteLine("Thank you for ordering."+ myName+" here is details to your order: a "  + pizza + "size" + size + "would be delivered at: " +ordTim + "at " + city  + " " + street + " " + house);
         }
 
         public void drink()
@@ -75,10 +76,11 @@ namespace ST1CP4_Samira
             string city = Console.ReadLine();
             Console.WriteLine("please enter your street number:");
             string street = Console.ReadLine();
-            Console.WriteLine("please enter your house number:");
+            Console.WriteLine("please enter your house name:");
             double house = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("please enter your phone number:");
             double phone = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("thank you");
             //Console.WriteLine("Thank you for ordering. here is details to your order: a "  + pizza + "size" + size + "would be delivered at: " +ordTim + "at " + city  + " " + street + " " + house);
 
         }
